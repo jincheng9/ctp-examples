@@ -1,39 +1,39 @@
-﻿Build started 2016/1/2 17:21:17.
+﻿Build started 2016/1/2 17:24:53.
      1>Project "E:\github\ctp-examples\solution\CTPTest\CTPTest\CTPTest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt TraderSpi.cpp main.cpp
-         TraderSpi.cpp
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp MyTraderSpi.cpp
+         MyTraderSpi.cpp
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(31): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(31): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(70): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(70): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(75): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(75): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\mytraderspi.cpp(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
          Generating Code...
          Skipping... (no relevant changes detected)
          main.cpp
        Link:
          E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\github\ctp-examples\solution\CTPTest\Debug\CTPTest.exe" /INCREMENTAL /NOLOGO "E:\github\ctp-examples\solution\CTPTest\lib\thosttraderapi.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\github\ctp-examples\solution\CTPTest\Debug\CTPTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\github\ctp-examples\solution\CTPTest\Debug\CTPTest.lib" /MACHINE:X86 Debug\main.obj
-         Debug\TraderSpi.obj
+         Debug\MyTraderSpi.obj
          CTPTest.vcxproj -> E:\github\ctp-examples\solution\CTPTest\Debug\CTPTest.exe
      1>Done Building Project "E:\github\ctp-examples\solution\CTPTest\CTPTest\CTPTest.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.42
+Time Elapsed 00:00:01.39

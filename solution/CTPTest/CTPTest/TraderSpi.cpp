@@ -40,7 +40,32 @@ void MyTraderSpi::OnFrontDisConnected(int nReason)
 void MyTraderSpi::OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
 {
 	cout << "OnRspUserLogin" << endl;
-}
+	cout << "error id: " << pRspInfo->ErrorID << endl;
+	cout << "error message: " << pRspInfo->ErrorMsg << endl;
+	
+	if (pRspInfo->ErrorID != 0)
+	{
+		exit(-1);
+	}
 
+	// print response
+	cout << "broker id:" << pRspUserLogin->BrokerID << endl;
+	cout << "user id:" << pRspUserLogin->UserID << endl;
+	cout << "login time:" << pRspUserLogin->LoginTime << endl;
+	cout << "tradingday:" << pRspUserLogin->TradingDay << endl;
+	cout << "system name:" << pRspUserLogin->SystemName << endl;
+	cout << "front id:" << pRspUserLogin->FrontID << endl;
+	cout << "session id:" << pRspUserLogin->SessionID << endl;
+	cout << "max orderRef:" << pRspUserLogin->MaxOrderRef << endl;
+	cout << "shfe time:" << pRspUserLogin->SHFETime << endl;
+	cout << "dce time:" << pRspUserLogin->DCETime << endl;
+	cout << "czce time:" << pRspUserLogin->CZCETime << endl;
+	cout << "ffex time" << pRspUserLogin->FFEXTime << endl;
+	// ReqOrderInsert
+	CThostFtdcInputOrderField order;
+	memset(&order, 0, sizeof(order));
+
+}
+ 
 
 

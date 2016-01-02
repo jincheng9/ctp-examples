@@ -9,13 +9,16 @@ MyTraderSpi::MyTraderSpi(CThostFtdcTraderApi* instance)
 
 MyTraderSpi::~MyTraderSpi()
 {
-
 }
-void MyTraderSpi::onFrontConnected()
+void MyTraderSpi::OnFrontConnected()
 {
 	cout << "connected" << endl;
 }
 
+void MyTraderSpi::OnFrontDisConnected(int nReason)
+{
+	cout << "disconnected" << endl;
+}
 void MyTraderSpi::OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
 {
 	cout << "OnRspUserLogin" << endl;

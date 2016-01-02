@@ -18,7 +18,8 @@ int main()
 	instance->RegisterSpi(&spi);
 	instance->SubscribePrivateTopic(THOST_TERT_RESTART);
 	instance->SubscribePublicTopic(THOST_TERT_RESTART);
-	instance->RegisterFront("tcp://180.168.146.187:10000");
+	//instance->RegisterFront("tcp://180.168.146.187:10000");
+	instance->RegisterFront("tcp://180.168.146.187:10030");
 	instance->Init();
 
 	instance->Join();

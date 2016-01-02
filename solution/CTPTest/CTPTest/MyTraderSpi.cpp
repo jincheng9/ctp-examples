@@ -64,10 +64,10 @@ void MyTraderSpi::OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin, CTh
 	
 	// settlementinfo confirm
 	cout << "ReqQrySettlementInfoConfirm" << endl;
-	CThostFtdcQrySettlementInfoConfirmField settlement;
+	CThostFtdcSettlementInfoConfirmField settlement;
 	strcpy(settlement.BrokerID, pRspUserLogin->BrokerID);
 	strcpy(settlement.InvestorID, pRspUserLogin->UserID);
-	m_ptrTraderApi->ReqQrySettlementInfoConfirm(&settlement, 1);
+	m_ptrTraderApi->ReqSettlementInfoConfirm(&settlement, 1);
 }
 
 void MyTraderSpi::OnRspOrderInsert(CThostFtdcInputOrderField *pInputOrder, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
@@ -115,7 +115,7 @@ void MyTraderSpi::OnRspSettlementInfoConfirm(CThostFtdcSettlementInfoConfirmFiel
 	order.Direction = THOST_FTDC_D_Buy;
 	strcpy(order.CombOffsetFlag, "0");
 	strcpy(order.CombHedgeFlag, "1");
-	order.LimitPrice = 39000;
+	order.LimitPrice = 40000;
 	order.VolumeTotalOriginal = 3;
 	order.TimeCondition = THOST_FTDC_TC_GFD;
 	strcpy(order.GTDDate, "");
@@ -127,4 +127,11 @@ void MyTraderSpi::OnRspSettlementInfoConfirm(CThostFtdcSettlementInfoConfirmFiel
 	order.IsAutoSuspend = false;
 
 	m_ptrTraderApi->ReqOrderInsert(&order, 2);
+}
+
+void MyTraderSpi::OnRspError(CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
+{
+	cout << "OnRspError..." << endl;
+	cout << "error id:" << pRspInfo->ErrorID << endl;
+	cout << "error message:" << pRspInfo->ErrorMsg << endl;
 }

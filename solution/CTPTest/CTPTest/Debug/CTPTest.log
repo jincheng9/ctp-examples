@@ -1,4 +1,4 @@
-﻿Build started 2016/1/2 17:48:40.
+﻿Build started 2016/1/2 21:47:35.
      1>Project "E:\github\ctp-examples\solution\CTPTest\CTPTest\CTPTest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MyTraderSpi.cpp
@@ -37,4 +37,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.42
+Time Elapsed 00:00:01.67

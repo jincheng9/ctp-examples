@@ -9,6 +9,10 @@ public:
 	virtual void OnFrontConnected();
 	virtual void OnFrontDisConnected(int nReason);
 	virtual void OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast);
+	virtual void OnRspOrderInsert(CThostFtdcInputOrderField *pInputOrder, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast);
+	virtual void OnRtnOrder(CThostFtdcOrderField *pOrder);
+	virtual void OnRtnTrade(CThostFtdcTradeField *pTrade);
+	virtual void OnErrRtnOrderInsert(CThostFtdcInputOrderField *pInputOrder, CThostFtdcRspInfoField *pRspInfo);
 private:
 	CThostFtdcTraderApi* m_ptrTraderApi;
 };

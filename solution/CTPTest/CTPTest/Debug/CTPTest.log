@@ -1,4 +1,4 @@
-﻿Build started 2016/1/2 16:57:34.
+﻿Build started 2016/1/2 17:21:17.
      1>Project "E:\github\ctp-examples\solution\CTPTest\CTPTest\CTPTest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt TraderSpi.cpp main.cpp
@@ -8,6 +8,22 @@
      1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
      1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(31): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(70): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(75): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>e:\github\ctp-examples\solution\ctptest\ctptest\traderspi.cpp(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
          Generating Code...
          Skipping... (no relevant changes detected)
@@ -20,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.16
+Time Elapsed 00:00:01.42

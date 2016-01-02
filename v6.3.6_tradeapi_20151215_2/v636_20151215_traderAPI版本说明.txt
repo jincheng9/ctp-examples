@@ -1,0 +1,52 @@
+版本号：v6.3.6_20151215
+兼容版本：CTP1.0 v6.3.6及以上后台系统
+
+变更说明：
+1. 交易类接口中新增字段IP地址及Mac地址；要求交易终端以及程序化交易系统自行抓取其执行程序运行所在设备的IP地址和Mac地址，并在进行交易指令
+申报时填入这两个字段中；
+
+	///IP地址
+	TThostFtdcIPAddressType	IPAddress;
+	typedef char TThostFtdcIPAddressType[16];
+
+	///Mac地址
+	TThostFtdcMacAddressType	MacAddress;
+	typedef char TThostFtdcMacAddressType[21];
+
+   影响接口如下：
+
+	请求函数		含义			使用的数据结构
+	ReqOrderInsert		报单			CthostFtdcInputOrderField
+	ReqOrderAction		报单操作（撤单）	CthostFtdcInputOrderActionField
+	ReqParkedOrderInsert	预埋单			CthostFtdcParkedOrderField
+	ReqParkedOrderAction	预埋撤单		CThostFtdcParkedOrderActionField
+	ReqQuoteInsert		报价			CThostFtdcInputQuoteField
+	ReqQuoteAction		报价操作（撤报价）	CThostFtdcInputQuoteActionField
+	ReqForQuoteInsert	询价			CthostFtdcInputForQuoteField
+	ReqExecOrderInsert	执行宣告（行权）	CThostFtdcInputExecOrderField
+	ReqExecOrderAction	执行宣告操作		CThostFtdcInputExecOrderActionField
+	ReqCombActionInsert	申请组合（中金）	CThostFtdcInputCombActionField
+	ReqBatchOrderAction	批量撤单（大商）	CThostFtdcInputBatchOrderActionField
+
+2. 交易类接口中新增以下字段，作为日后兼容CTP2.0后台系统的保留字段，对接一代后台时这些字段暂不起作用。
+
+	TThostFtdcInvestUnitIDType	InvestUnitID;
+	typedef char TThostFtdcInvestUnitIDType[17];
+	投资单元代码	
+
+	TThostFtdcAccountIDType	AccountID;
+	typedef char TThostFtdcAccountIDType[13];
+	资金账号
+
+	TThostFtdcCurrencyIDType	CurrencyID;
+	typedef char TThostFtdcCurrencyIDType[4];
+	币种代码，指定所使用资金帐号的币种，人民币为CNY，美元为USD
+
+	TThostFtdcClientIDType	ClientID;
+	typedef char TThostFtdcClientIDType[11];
+	交易编码， 接口回报中包含此字段，指令申报时不需要填此字段
+
+3. 新增接口<交易所公告通知>，用于盘中推送中金所发布的公告通知，仅用于中金所。
+
+	函数名			含义			使用的数据结构
+	OnRtnBulletin		交易所公告通知		CThostFtdcBulletinField 

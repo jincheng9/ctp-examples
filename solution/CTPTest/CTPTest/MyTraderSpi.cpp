@@ -115,7 +115,7 @@ void MyTraderSpi::OnRspSettlementInfoConfirm(CThostFtdcSettlementInfoConfirmFiel
 	order.Direction = THOST_FTDC_D_Buy;
 	strcpy(order.CombOffsetFlag, "0");
 	strcpy(order.CombHedgeFlag, "1");
-	order.LimitPrice = 40000;
+	order.LimitPrice = 0;
 	order.VolumeTotalOriginal = 3;
 	order.TimeCondition = THOST_FTDC_TC_GFD;
 	strcpy(order.GTDDate, "");

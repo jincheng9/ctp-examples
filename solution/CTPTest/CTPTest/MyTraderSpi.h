@@ -13,9 +13,11 @@ public:
 	virtual void OnRtnOrder(CThostFtdcOrderField *pOrder);
 	virtual void OnRtnTrade(CThostFtdcTradeField *pTrade);
 	virtual void OnErrRtnOrderInsert(CThostFtdcInputOrderField *pInputOrder, CThostFtdcRspInfoField *pRspInfo);
+	virtual void OnRspSettlementInfoConfirm(CThostFtdcSettlementInfoConfirmField *pSettlementInfoConfirm, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast);
 private:
 	CThostFtdcTraderApi* m_ptrTraderApi;
 };
+
 
 
 

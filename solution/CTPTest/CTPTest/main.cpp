@@ -16,8 +16,8 @@ int main()
 	MyTraderSpi spi(instance);
 
 	instance->RegisterSpi(&spi);
-	instance->SubscribePrivateTopic(THOST_TERT_RESTART);
-	instance->SubscribePublicTopic(THOST_TERT_RESTART);
+	instance->SubscribePrivateTopic(THOST_TERT_RESUME);
+	instance->SubscribePublicTopic(THOST_TERT_RESUME);
 	//instance->RegisterFront("tcp://180.168.146.187:10000");
 	instance->RegisterFront("tcp://180.168.146.187:10030");
 	instance->Init();

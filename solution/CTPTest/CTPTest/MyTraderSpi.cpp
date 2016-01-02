@@ -109,14 +109,14 @@ void MyTraderSpi::OnRspSettlementInfoConfirm(CThostFtdcSettlementInfoConfirmFiel
 	strcpy(order.BrokerID, pSettlementInfoConfirm->BrokerID);
 	strcpy(order.InvestorID, pSettlementInfoConfirm->InvestorID);
 	strcpy(order.InstrumentID, "cu1605");
-	strcpy(order.OrderRef, "0002");
+	strcpy(order.OrderRef, "0003");
 	strcpy(order.UserID, pSettlementInfoConfirm->InvestorID);
 	order.OrderPriceType = THOST_FTDC_OPT_LimitPrice;
 	order.Direction = THOST_FTDC_D_Buy;
 	strcpy(order.CombOffsetFlag, "0");
 	strcpy(order.CombHedgeFlag, "1");
 	order.LimitPrice = 0;
-	order.VolumeTotalOriginal = 3;
+	order.VolumeTotalOriginal = 1;
 	order.TimeCondition = THOST_FTDC_TC_GFD;
 	strcpy(order.GTDDate, "");
 	order.VolumeCondition = THOST_FTDC_VC_AV;
